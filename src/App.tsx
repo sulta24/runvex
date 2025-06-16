@@ -184,10 +184,32 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
-      {/* Background Effects */}
-      <div className="fixed inset-0 opacity-10">
-        <div className="absolute top-1/4 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-gradient-to-br from-white/20 to-yellow-50/10 rounded-full filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-56 md:w-80 h-56 md:h-80 bg-gradient-to-br from-white/20 to-yellow-50/10 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+      {/* Background Elements */}
+      <div className="fixed inset-0 opacity-60">
+        {/* Main lights */}
+        <div className="absolute top-1/4 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-gradient-to-br from-white/70 to-yellow-50/40 rounded-full filter blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-56 md:w-80 h-56 md:h-80 bg-gradient-to-br from-white/70 to-yellow-50/40 rounded-full filter blur-3xl animate-pulse-slow delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-gradient-to-br from-white/60 to-yellow-50/30 rounded-full filter blur-3xl animate-float"></div>
+        
+        {/* Decorative shapes */}
+        <div className="absolute top-20 left-[20%] w-24 h-24 border-3 border-white/70 rounded-full animate-spin-slow"></div>
+        <div className="absolute top-40 right-[15%] w-32 h-32 border-3 border-white/60 rounded-full animate-reverse-spin"></div>
+        <div className="absolute bottom-32 left-[35%] w-40 h-40 border-3 border-white/50 rounded-full animate-spin-slow"></div>
+        
+        {/* Small floating lights */}
+        <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-white/60 rounded-full filter blur-2xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-32 h-32 bg-white/60 rounded-full filter blur-2xl animate-float-delay"></div>
+        <div className="absolute top-2/3 right-1/4 w-40 h-40 bg-gradient-to-br from-white/60 to-yellow-50/30 rounded-full filter blur-2xl animate-pulse-slow"></div>
+        
+        {/* Subtle dots */}
+        <div className="absolute top-[30%] right-[25%] w-4 h-4 bg-white/80 rounded-full animate-pulse-slow"></div>
+        <div className="absolute bottom-[40%] left-[20%] w-4 h-4 bg-white/70 rounded-full animate-pulse-slow delay-1000"></div>
+        <div className="absolute top-[70%] right-[30%] w-4 h-4 bg-white/90 rounded-full animate-pulse-slow"></div>
+        <div className="absolute top-[20%] left-[35%] w-4 h-4 bg-white/80 rounded-full animate-pulse-slow delay-700"></div>
+        
+        {/* Large subtle rings */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border-3 border-white/30 rounded-full animate-pulse-slow"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border-3 border-white/30 rounded-full animate-float delay-1000"></div>
       </div>
 
       {/* Navigation */}
@@ -199,14 +221,11 @@ const App: React.FC = () => {
             </div>
             <span className="text-lg md:text-xl font-bold">Runvex</span>
           </div>
-          <div className="hidden md:flex space-x-8">
-            <a href="#features" className="text-white/70 hover:text-white transition-colors">Features</a>
-            <a href="#demo" className="text-white/70 hover:text-white transition-colors">Demo</a>
-            <a href="#pricing" className="text-white/70 hover:text-white transition-colors">Pricing</a>
+          <div className="flex space-x-8 text-white/70">
+            <a href="#features" className="hover:text-white transition-colors">Features</a>
+            <a href="#demo" className="hover:text-white transition-colors">Demo</a>
+            <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
           </div>
-          <button className="bg-white text-black px-4 md:px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm md:text-base">
-            Sign In
-          </button>
         </div>
       </nav>
 
