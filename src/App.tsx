@@ -473,32 +473,16 @@ const App: React.FC = () => {
           <div className="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm md:text-base">&copy; 2025 Runvex. All rights reserved.</p>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
+              
               <a 
-                href="https://twitter.com/runvex" 
+                href="https://instagram.com/runvex.ai" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white/60 hover:text-white transition-colors"
               >
-                <Twitter className="w-5 h-5" />
+                <Instagram className="w-10 h-10" />
               </a>
-              <a 
-                href="https://instagram.com/runvex" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-white/60 hover:text-white transition-colors"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://www.producthunt.com/posts/runvex" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-white/60 hover:text-white transition-colors"
-              >
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M13.604 8.4h-3.405V12h3.405c.995 0 1.801-.806 1.801-1.801 0-.995-.806-1.799-1.801-1.799zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 14.4h-3.405V18H7.801V6h5.803c2.207 0 4.001 1.794 4.001 4.001 0 2.205-1.794 3.999-4.001 3.999z" />
-                </svg>
-              </a>
+              
             </div>
           </div>
         </div>
