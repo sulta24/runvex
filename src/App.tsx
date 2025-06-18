@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Play, Sparkles, Upload, Zap, Mail, CheckCircle, ArrowRight, Star, Instagram, Twitter } from 'lucide-react';
+import { Play, Sparkles, Upload, Zap, Mail, CheckCircle, ArrowRight, Star, Instagram } from 'lucide-react';
 import { supabase } from './supabase';
 import './App.css';
 
@@ -473,16 +473,14 @@ const App: React.FC = () => {
           <div className="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm md:text-base">&copy; 2025 Runvex. All rights reserved.</p>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
-              
               <a 
                 href="https://instagram.com/runvex.ai" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white/60 hover:text-white transition-colors"
               >
-                <Instagram className="w-10 h-10" />
+                <Instagram className="w-5 h-5" />
               </a>
-              
             </div>
           </div>
         </div>
