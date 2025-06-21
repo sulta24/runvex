@@ -82,7 +82,7 @@ const translations = {
     pricing: 'Цены',
     runvex: 'Runvex',
     nowInBeta: 'Бета-тестирование — запишитесь в очередь',
-    createVideos: 'Монтируйте видео свои тренировки',
+    createVideos: 'Монтируйте свои видео тренировок',
     likeMagic: '', // Will be filled with animated word
     heroDesc: 'Загружайте видео тренировок, опишите что хотите получить, и ИИ смонтирует готовый ролик для публикации. Никаких навыков монтажа не нужно.',
     joinWaitlist: 'Записаться',
