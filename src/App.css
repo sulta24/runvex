@@ -1,4 +1,20 @@
 /* Component-specific styles for the landing page */
+@import "tailwindcss";
+
+/* Typewriter cursor animation */
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.typewriter-cursor {
+  animation: blink 1s infinite;
+  font-weight: 300;
+}
 
 /* Hero section animations */
 .hero-title {
@@ -265,4 +281,84 @@
   .animate-spin {
     animation: none !important;
   }
+}
+
+/* Language Dropdown Styles */
+.language-dropdown {
+  position: relative;
+  z-index: 9999 !important;
+}
+
+.language-dropdown-menu {
+  position: absolute !important;
+  top: 100% !important;
+  right: 0 !important;
+  margin-top: 0.5rem !important;
+  width: 8rem !important;
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0.5rem !important;
+  overflow: hidden !important;
+  z-index: 99999 !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8) !important;
+  animation: dropdownFadeIn 0.2s ease-out !important;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.language-dropdown-item {
+  width: 100% !important;
+  padding: 0.75rem 1rem !important;
+  text-align: left !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  font-size: 0.875rem !important;
+  display: block !important;
+}
+
+.language-dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.language-dropdown-button {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.5rem 0.75rem !important;
+  border-radius: 0.5rem !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 0.875rem !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.language-dropdown-button:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.language-dropdown-chevron {
+  width: 1rem !important;
+  height: 1rem !important;
+  transition: transform 0.2s ease !important;
+}
+
+.language-dropdown-chevron.rotate {
+  transform: rotate(180deg) !important;
 }
