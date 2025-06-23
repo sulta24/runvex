@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Play, Sparkles, Upload, Zap, Mail, CheckCircle, ArrowRight, Star, Instagram } from 'lucide-react';
 import { supabase } from './supabase';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
-
 interface EmailEntry {
   email: string;
   timestamp: number;
@@ -691,6 +691,7 @@ const App: React.FC = () => {
            </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 };
