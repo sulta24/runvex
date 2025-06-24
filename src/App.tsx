@@ -82,7 +82,7 @@ const translations = {
     pricing: 'Цены',
     runvex: 'Runvex',
     nowInBeta: 'Бета-тестирование — запишитесь в очередь',
-    createVideos: 'Монтируйте видео тренировок',
+    createVideos: 'Монтируйте видео своих тренировок',
     likeMagic: '', // Will be filled with animated word
     heroDesc: 'Загружайте видео тренировок, опишите что хотите получить, и ИИ смонтирует готовый ролик для публикации. Никаких навыков монтажа не нужно.',
     joinWaitlist: 'Записаться',
@@ -343,7 +343,7 @@ const App: React.FC = () => {
   );
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden">
+    <div className="min-h-screen bg-black text-white overflow-hidden font-inter">
       {/* Background Elements */}
       <div className="fixed inset-0 opacity-60">
         {/* Main lights */}
