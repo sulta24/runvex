@@ -128,7 +128,7 @@ const translations = {
 
 const getTargetDate = (): Date => {
   // Установить дату на 27 июня 2025
-  const targetDate = new Date(2025, 5, 30); // месяц 5 = июнь (отсчет с 0)
+  const targetDate = new Date(2025, 6, 2); // месяц 5 = июнь (отсчет с 0)
   targetDate.setHours(23, 59, 59, 999);
   return targetDate;
 };
