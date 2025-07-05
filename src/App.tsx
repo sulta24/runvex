@@ -27,7 +27,7 @@ interface Feedback {
 
 const translations = {
   en: {
-    bakedBy: 'baked by',
+    backedBy: 'backed by',
     features: 'Create',
     demo: 'Profile',
     signIn: 'Sign In',
