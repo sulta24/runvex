@@ -99,7 +99,7 @@ const translations = {
     feedbackSuccess: 'Thank you for your feedback!'
   },
   ru: {
-    bakedBy: 'разработано',
+    bakedBy: 'при поддержке',
     features: 'Создание',
     demo: 'Профиль',
     signIn: 'Войти',
